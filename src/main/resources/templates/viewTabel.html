@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Tabel Harga</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Tabel Harga Barang 2021</div>
+        <hr>
+        <table border="2">
+            <tr th:each="tabel,count:${tabel_baru}">
+                <td th:text="${count.count}"></td>
+                <td th:text="${tabel[0]}"></td>
+                <td th:text="${tabel[1]}"></td>
+            </tr>
+        </table>
+        <br>
+        Barang dicari = <ll th:text="${barangdicari}"></ll>
+    </body>
+</html>
